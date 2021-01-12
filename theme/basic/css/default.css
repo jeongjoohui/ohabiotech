@@ -2,7 +2,7 @@
 
 /* 초기화 */
 html {overflow-y:scroll}
-body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#fff}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#fff; overflow-x: hidden;}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Malgun Gothic', dotum, sans-serif}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
@@ -12,7 +12,7 @@ legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-inde
 label, input, button, select, img {vertical-align:middle;font-size:1em}
 input, button {margin:0;padding:0;font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
 input[type="submit"] {cursor:pointer}
-button {cursor:pointer}
+button {cursor:pointer; border:0; outline: 0;}
 
 textarea, select {font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
 select {margin:0}
@@ -51,6 +51,10 @@ border:1px solid #558ab7 !important;
 #hd_wrapper,
 #tnb .inner,
 
+/* #gnb .gnb_wrap,
+#container_wr,
+#ft_wr {width:1200px} */
+
 #gnb .gnb_wrap,
 #container_wr,
 #ft_wr {width:1200px}
@@ -68,17 +72,17 @@ border:1px solid #558ab7 !important;
 .hd_pops_footer .hd_pops_close {background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {background:#212020}
+#hd {background:#f8f8f8}/*21.01.11 수정*/
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
-#tnb {border-bottom:1px solid #383838;margin:0 auto}
+#tnb {/*border-bottom:1px solid #383838;*/margin:0 auto}
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
-#tnb .inner {margin:0 auto}
+#tnb .inner {margin:0 auto; padding: 20px 0; position: relative;}
 
 #hd_wrapper {position:relative;margin:0 auto;height:140px;zoom:1}
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
-#logo {float:left;padding:30px 0 0}
+#logo {float:left;}
 
 .hd_sch_wr {float:left;padding:30px 0;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
@@ -86,19 +90,21 @@ border:1px solid #558ab7 !important;
 #hd_sch #sch_stx {float:left;width:385px;height:45px;padding-left:10px;border-radius:30px 0 0 30px;background:#2c2c2c;border:0;border-right:0;font-size:1.25em;color:#fff}
 #hd_sch #sch_submit {float:left;width:60px;height:45px;border:0;background:#2c2c2c;color:#fff;border-radius:0 30px 30px 0;cursor:pointer;font-size:16px}
 
-#hd_qnb {float:right;text-align:right}
+#hd_qnb {text-align:left; width: 53%; margin-left: 26%;}
 #hd_qnb:after {display:block;visibility:hidden;clear:both;content:""}
-#hd_qnb li {float:left;font-size:1.083em;line-height:14px;border-right:1px solid #4a4a4a;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px}
+/* #hd_qnb li {float:left;font-size:1.083em;line-height:14px;border-right:1px solid #4a4a4a;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px} */
+#hd_qnb li {float:left;font-size:1.3em;position:relative;text-align:center;margin:0 30px; line-height: 32px;}
+
 #hd_qnb li:last-child {padding-right:0;margin-right:0;border-right:0}
 #hd_qnb li span {display:block;margin-top:5px;font-size:0.92em}
 #hd_qnb li a {display:inline-block;color:#919191}
 #hd_qnb .visit .visit-num {display:inline-block;line-height:16px;padding:0 5px;margin-left:5px;border-radius:10px;background:#da22f5;color:#fff;font-size:10px}
 
 
-.hd_login {position:absolute;right:0;top:60px}
+.hd_login {position:absolute;right:0; top: 50%;transform: translateY(-50%);}
 .hd_login li {float:left;margin:0 5px;border-left:1px solid #616161;padding-left:10px;line-height:13px}
 .hd_login li:first-child {border-left:0}
-.hd_login a {color:#fff}
+.hd_login a {color:#555}
 
 
 /* 메인메뉴 */
@@ -106,7 +112,7 @@ border:1px solid #558ab7 !important;
 #gnb > h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #gnb .gnb_wrap {margin:0 auto;position:relative}
 #gnb .gnb_wrap:hover, #gnb .gnb_wrap:focus, #gnb .gnb_wrap:active{z-index:3}
-#gnb #gnb_1dul {font-size:1.083em;padding:0;border-bottom:1px solid #e0e2e5;zoom:1}
+#gnb #gnb_1dul {font-size:1.083em;padding:0;/*border-bottom:1px solid #e0e2e5;*/zoom:1}
 #gnb ul:after {display:block;visibility:hidden;clear:both;content:""}
 #gnb .gnb_1dli {float:left;line-height:55px;padding:0px;position:relative}
 #gnb .gnb_1dli:hover > a {color:#3a8afd;
@@ -159,18 +165,28 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #wrapper {}
 #container_wr:after {display:block;visibility:hidden;clear:both;content:""}
 #container_wr {margin:0 auto;height:100%;zoom:1}
-#aside {float:right;width:235px;padding:0;height:100%;margin:20px 0 20px 20px}
 
-#container {position:relative;float:left;min-height:500px;height:auto !important;margin:20px 0;height:500px;font-size:1em;width:930px;zoom:1}
+#aside {display:none !important; float:right;width:235px;padding:0;height:100%;margin:20px 0 20px 20px}
+
+#container {position:relative;float:left;min-height:500px;height:auto !important;margin:100px 0;height:500px;font-size:1em;width:1200px;zoom:1}
+
+.ver_line{display:block; width: 1px; height: 100px; margin: 0 auto; background-color: #ccc;}
+
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {font-size:1.333em;margin:0 auto;font-weight:bold}
 #container_title span {margin:0 auto 10px;display:block;line-height:30px}
+
+.main_banner{text-align: center; background: #f8f8f8;position: relative;}
+.main_txt{position: absolute; top: 50%; transform: translateY(-50%);left: 20%; text-align: left;}
+.main_txt h2{font-size: 4em; color: #393939; font-weight: bold; margin-bottom: 0.5em;}
+.main_txt h3{font-size: 1.5em; color: #898989; font-weight: 400; margin-bottom: 2em;}
+.main_btn{padding: 1.2em 0.5em; border-radius: 30px; width: 210px; outline: none; font-size: 1.2em; border:1px solid #969696; background: #f8f8f8;}
 
 .lt_wr {width:32%}
 .lt_wr:nth-child(3n+1) {clear:both}
 .latest_wr {margin-bottom:20px}
 .latest_wr:after {display:block;visibility:hidden;clear:both;content:""}
-.latest_top_wr {margin:0 -10px 20px}
+/* .latest_top_wr {margin:0 -10px 20px} */
 .latest_top_wr:after {display:block;visibility:hidden;clear:both;content:""}
 
 /* 하단 레이아웃 */
@@ -444,4 +460,3 @@ box-sizing:content-box;
 
 /* Mobile화면으로 */
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
-
