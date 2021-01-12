@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 /* 새글 스킨 (latest) */
-.pic_li_lt {position:relative;width:33.3333%;float:left;padding:0 10px;background:#fff}
-.pic_li_lt .lat_title {display:block;line-height:45px;font-size:1.2em;color:#253dbe}
+.pic_li_lt {position:relative;width:100%;float:left;padding:0 10px;background:#fff; margin-top: 70px;}
+.pic_li_lt .lat_title {display:block;line-height:45px;font-size:2em;color:#253dbe; text-align: center;}
+.lat_title_1{text-align: center;margin:0 auto; font-size: 1.2em; color: #777 ; font-weight: 200;}
 .pic_li_lt .lat_title a {color:#000;display:inline-block;position:relative}
 .latest_top_wr .pic_li_lt:nth-child(3n+1) {clear: both!important}
 
@@ -33,5 +34,8 @@
 .pic_li_lt .empty_li:before {background:none;padding:0}
 
 .pic_li_lt .lt_cmt {background:#e9eff5;color:#3a8afd;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;vertical-align:middle}
-.pic_li_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center}
-.pic_li_lt .lt_more:hover {color:#777}
+/* .pic_li_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center} */
+.pic_li_lt .lt_more {display:block; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); width: 150px; height: 40px; line-height: 40px; color: #fff; background-color: #000; border-radius: 28px; text-align: center; }
+.pic_li_lt .lt_more:hover {color:#000; background-color: #fff; border: 1px solid #000;}
+
+.more_btn{display:block;width: 150px; height: 40px; line-height: 40px; color: #fff; background-color: #000; border-radius: 28px; text-align: center; margin: 50px auto; font-size: 1.3em;}
