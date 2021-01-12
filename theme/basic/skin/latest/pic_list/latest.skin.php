@@ -10,8 +10,11 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 <div class="pic_li_lt">
-    <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
-    <ul>
+    <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>">OHA BIOTECH STORY</a></h2>
+    <h3 class="lat_title_1">오하바이오텍을 소개합니다.</h3>
+    <a href="<?php echo get_pretty_url($bo_table); ?>" class="more_btn">VIEW MORE +</a>
+    
+    <?/*<ul>
     <?php
     for ($i=0; $i<$list_count; $i++) {
         
@@ -67,7 +70,6 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
-    </ul>
-    <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><span class="sound_only"><?php echo $bo_subject ?></span>더보기</a>
+    </ul>*/?>
 
 </div>
