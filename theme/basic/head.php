@@ -32,10 +32,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         alt="<?php echo $config['cf_title']; ?>"></a>
             </div>
             <ul id="hd_qnb">
-                <li><a href="<?php echo G5_BBS_URL ?>/faq.php">회사소개</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/qalist.php">기술소개</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/new.php">제품소개</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/new.php">시설소개</a></li>
+                <li><a href="<?php echo get_pretty_url('content', 'company'); ?>">회사소개</a></li>
+                <li><a href="<?php echo get_pretty_url('content', 'technology'); ?>">기술소개</a></li>
+                <li><a href="<?php echo get_pretty_url('content', 'product'); ?>">제품소개</a></li>
+                <li><a href="<?php echo get_pretty_url('content', 'facility'); ?>">시설소개</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/new.php">쇼핑몰바로가기</a></li>
                 <!-- <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit">접속자<strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li> -->
             </ul>

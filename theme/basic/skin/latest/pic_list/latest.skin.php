@@ -13,7 +13,21 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>">OHA BIOTECH STORY</a></h2>
     <h3 class="lat_title_1">오하바이오텍을 소개합니다.</h3>
     <a href="<?php echo get_pretty_url($bo_table); ?>" class="more_btn">VIEW MORE +</a>
-    
+    <ul class="pic_li_cont">
+        <li><a href=""><img src="" alt="">
+                <h4>오하바이오텐이란?</h4>
+                <p>오하바이오텍은...</p>
+            </a></li>
+        <li><a href=""><img src="" alt="">
+                <h4>기술소개</h4>
+                <p>오하바이오텍은 기술</p>
+            </a></li>
+        <li><a href=""><img src="" alt="">
+                <h4>언론보도</h4>
+                <p>오하바이오텍 언론보도입니다.</p>
+            </a></li>
+    </ul>
+
     <?/*<ul>
     <?php
     for ($i=0; $i<$list_count; $i++) {
@@ -33,9 +47,9 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
             $img_link_html = '<a href="'.$list[$i]['href'].'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
         }
     ?>
-        <li>
-            <?php echo $img_link_html; ?>
-            <?php
+    <li>
+        <?php echo $img_link_html; ?>
+        <?php
             if ($list[$i]['icon_secret']) echo "<i class=\"fa fa-lock\" aria-hidden=\"true\"></i><span class=\"sound_only\">비밀글</span> ";
  
             echo "<a href=\"".$list[$i]['href']."\" class=\"pic_li_tit\"> ";
@@ -61,11 +75,11 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 
             ?>
 
-            <div class="lt_info">
-				<span class="lt_nick"><?php echo $list[$i]['name'] ?></span>
-            	<span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>              
-            </div>
-        </li>
+        <div class="lt_info">
+            <span class="lt_nick"><?php echo $list[$i]['name'] ?></span>
+            <span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>
+        </div>
+    </li>
     <?php }  ?>
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
     <li class="empty_li">게시물이 없습니다.</li>
