@@ -54,15 +54,8 @@ if($config['cf_add_meta'])
 <link rel="stylesheet" href="<?php echo run_replace('head_css_url', G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE ? 'mobile' : 'default').'.css?ver='.G5_CSS_VER, G5_THEME_URL); ?>">
 
 <?php
-if (defined('G5_IS_ADMIN')) {
-    if(!defined('_THEME_PREVIEW_'))
-        echo '<link rel="stylesheet" href="'.run_replace('head_css_url', G5_ADMIN_URL.'/css/admin.css?ver='.G5_CSS_VER, G5_URL).'">'.PHP_EOL;
-}
-else if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //<------------여기 추가
+if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //<------------여기 추가
 
-else {
-    echo '<link rel="stylesheet" href="'.run_replace('head_css_url', G5_CSS_URL.'/'.(G5_IS_MOBILE ?'mobile':'default').'.css?ver='.G5_CSS_VER, G5_URL).'">'.PHP_EOL;
-}
 ?>
 
 <!--[if lte IE 8]>

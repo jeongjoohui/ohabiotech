@@ -11,8 +11,6 @@ if (G5_IS_MOBILE) {
 
 include_once(G5_THEME_PATH.'/head.php');
 
-
-add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/css/index.css?ver='.G5_CSS_VER.'">', 0);
 ?>
 
 
@@ -60,7 +58,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/css/index.css?ver='.
 
 
 
-<?/*<div class="latest_top_wr">
+
+ <div class="latest_top_wr">
     <?php
     // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
     // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
@@ -80,9 +79,11 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/css/index.css?ver='.
     echo latest('theme/new_arrival', 'arrival', 4, 23);		// 최소설치시 자동생성되는 갤러리게시판
     ?>
     <!-- } 사진 최신글2 끝 -->
-</div>/*?>
+</div>
+
 
 
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
+?>
