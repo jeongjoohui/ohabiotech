@@ -6,8 +6,9 @@ include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 0);
 
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/swiper.min.css">', 0);
-add_javascript('<script src="'.G5_JS_URL.'/js/swiper.min.js"></script>', 0);
-add_javascript('<script src="'.G5_JS_URL.'/js/oha.swiper.js"></script>', 1);
+//add_javascript('<script src="'.G5_JS_URL.'/js/swiper.min.js"></script>', 0);
+//add_javascript('<script src="'.G5_JS_URL.'/js/oha.swiper.js"></script>', 1);
+
 
 $thumb_width = 210;
 $thumb_height = 150;
@@ -27,7 +28,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     </div>
 </div>
 
-<?/*<div class="pic_lt">
+<div class="pic_lt">
     <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
 <ul>
     <?php
@@ -83,4 +84,4 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><span
         class="sound_only"><?php echo $bo_subject ?></span>더보기</a>
 
-</div>*/?>
+</div>

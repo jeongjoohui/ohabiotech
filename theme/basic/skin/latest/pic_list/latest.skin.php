@@ -10,29 +10,8 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 <div class="pic_li_lt">
-    <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>">OHA BIOTECH STORY</a></h2>
-    <h3 class="lat_title_1">오하바이오텍을 소개합니다.</h3>
-    <a href="<?php echo get_pretty_url($bo_table); ?>" class="more_btn">VIEW MORE +</a>
-    <ul class="pic_li_cont">
-        <li><a href="<?php echo get_pretty_url('content', 'company'); ?>"><img src="<?php echo G5_IMG_URL ?>/company_thum.jpg" alt="">
-                <h4>오하바이오텍이란?</h4>
-                <p>오하바이오텍은...</p>
-            </a>
-            <div class="img_hover">MORE VEIW + </div>
-        </li>
-        <li><a href="<?php echo get_pretty_url('content', 'technology'); ?>"><img src="<?php echo G5_IMG_URL ?>/tech_thum.jpg" alt="">
-                <h4>기술소개</h4>
-                <p>오하바이오텍은 기술</p>
-            </a><div class="img_hover" style="display:none;">MORE VEIW + </div>
-        </li>
-        <li><a href=""><img src="<?php echo G5_IMG_URL ?>/news_thum.jpg" alt="">
-                <h4>언론보도</h4>
-                <p>오하바이오텍 언론보도</p>
-            </a><div class="img_hover" style="display:none;">MORE VEIW + </div>
-        </li>
-    </ul>
 
-    <?/*<ul>
+    <ul>
     <?php
     for ($i=0; $i<$list_count; $i++) {
         
@@ -88,6 +67,6 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
-    </ul>*/?>
+    </ul>
 
 </div>

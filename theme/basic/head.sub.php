@@ -47,9 +47,24 @@ if (G5_IS_MOBILE) {
 
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
+    
 ?>
+
 <title><?php echo $g5_head_title; ?></title>
 <link rel="stylesheet" href="<?php echo run_replace('head_css_url', G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE ? 'mobile' : 'default').'.css?ver='.G5_CSS_VER, G5_THEME_URL); ?>">
+
+<?php
+if (defined('G5_IS_ADMIN')) {
+    if(!defined('_THEME_PREVIEW_'))
+        echo '<link rel="stylesheet" href="'.run_replace('head_css_url', G5_ADMIN_URL.'/css/admin.css?ver='.G5_CSS_VER, G5_URL).'">'.PHP_EOL;
+}
+else if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //<------------여기 추가
+
+else {
+    echo '<link rel="stylesheet" href="'.run_replace('head_css_url', G5_CSS_URL.'/'.(G5_IS_MOBILE ?'mobile':'default').'.css?ver='.G5_CSS_VER, G5_URL).'">'.PHP_EOL;
+}
+?>
+
 <!--[if lte IE 8]>
 <script src="<?php echo G5_JS_URL ?>/html5.js"></script>
 <![endif]-->
@@ -73,6 +88,8 @@ add_javascript('<script src="'.G5_JS_URL.'/common.js?ver='.G5_JS_VER.'"></script
 add_javascript('<script src="'.G5_JS_URL.'/wrest.js?ver='.G5_JS_VER.'"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
+
+
 
 
 if(G5_IS_MOBILE) {
