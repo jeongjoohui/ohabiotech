@@ -96,13 +96,62 @@ include_once(G5_THEME_PATH.'/head.php');
 <section id="section5" class="clearfix">
     <h2 class="title"><a href="<?php echo get_pretty_url('content', 'company');  ?>">CONTACT US</a></h2>
     <h3 class="sub_title">궁금한 사항이나 기타 문의사항이 있으신 경우 언제든 연락 부탁드립니다.</h3>
-    <div class="contact_us">
+    <div class="contact_us clearfix">
         <div class="cont_lf">
-            <h2>CONTACT US</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.482663924989!2d126.87886161564623!3d37.47293493724003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61e5708cf261%3A0xc9b3d8e99b0684f3!2zKOyjvCnsmKTtlZjrsJTsnbTsmKTthY0!5e0!3m2!1sko!2skr!4v1610514401301!5m2!1sko!2skr"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-
-
+        <div class="cont_rt">
+            <h3>OHA BIOTECH</h3>
+            <ul class="list_tit">
+                <li>COMPANY</li>
+                <li>OWNER</li>
+                <li>TEL</li>
+                <li>E-MAIL</li>
+                <li>ADDRESS</li>
+            </ul>
+            <ul class="list_cont">
+                <li>(주) 오하바이오텍</li>
+                <li>송순근</li>
+                <li>02-830-5758</li>
+                <li>ohabiotech@gmail.com</li>
+                <li>(08588) 서울시 금천구 가산디지털2로 53, 한라시그마밸리 1303호</li>
+            </ul>
+        </div>
     </div>
+
+    <!--<div class="hidden-xs main-speedform"  >-->
+    <div class="main-speedform">
+        <form name="fwrite" method="post" onSubmit="return submitChk(this)" ;>
+            <input type=hidden name="sca" value="" />
+            <fieldset>
+                <ul>
+                    <li><label for="wr_1"></label><input type="text" id="wr_1" name="wr_1" placeholder="업체명" title="업체명"
+                            maxlength="30" required /></li>
+
+                    <li><label for="wr_name"></label><input type="text" id="wr_name" name="wr_name" placeholder="이름"
+                            title="성함" maxlength="30" required /></li>
+
+                    <li><label for="wr_email"></label><input type="text" id="wr_email" name="wr_email" placeholder="이메일"
+                            title="이메일" maxlength="30" required /></li>
+
+                    <li><label for="wr_3"></label><input type="text" id="wr_3" name="wr_3" placeholder="연락처" title="연락처"
+                            maxlength="30" required /></li>
+                    <!-- <li class="tex_area"><label for="text"></label><textarea name="conts" id="text" placeholder="의뢰내용" title="의뢰내용"  ></textarea></li> -->
+                </ul>
+                <p class="tex_area"><label for="wr_content"></label><textarea name="wr_content" id="wr_content_id"
+                        placeholder="의뢰내용" title="의뢰내용"></textarea></p>
+                <p class="checkbox"><input type="checkbox" name="chk" id="check" required /> <label
+                        for="check">개인정보보호정책에 동의합니다.</label></p>
+            </fieldset>
+            <p class="btn-area">
+                <!--<a><input type="submit" value="상담의뢰" id="postBtn" accesskey="s" class="postBtn" style="background:none; border:none; color:#fff; "></a>-->
+                <input type="submit" value="문 의 하 기" id="postBtn" accesskey="s" class="btn_consul">
+
+            </p>
+        </form>
+    </div><!-- class="main-speedform" -->
 </section>
 
 

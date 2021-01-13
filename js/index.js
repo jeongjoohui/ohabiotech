@@ -1,6 +1,6 @@
-$(function(){
 
-    //swiper start
+//swiper start
+$(function(){
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4, // 슬라이드를 한번에 3개를 보여준다
         spaceBetween: 30, // 슬라이드간 padding 값 30px 씩 떨어뜨려줌
@@ -24,4 +24,12 @@ $(function(){
       });
 //swiper end
 
+
+
 });
+
+//문의,상담 chk / sendemail
+function submitChk(f) {
+    f.action = "./_inc/form_ok.php";
+    return true;
+}
