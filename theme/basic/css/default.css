@@ -176,11 +176,6 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #container_title {font-size:1.333em;margin:0 auto;font-weight:bold}
 #container_title span {margin:0 auto 10px;display:block;line-height:30px}
 
-#main_banner{text-align: center; background: #f8f8f8;position: relative;}
-.main_txt{position: absolute; top: 50%; transform: translateY(-50%);left: 20%; text-align: left;}
-.main_txt h2{font-size: 4em; color: #393939; font-weight: bold; margin-bottom: 0.5em;}
-.main_txt h3{font-size: 1.5em; color: #898989; font-weight: 400; margin-bottom: 2em;}
-.main_btn{padding: 1.2em 0.5em; border-radius: 30px; width: 210px; outline: none; font-size: 1.2em; border:1px solid #969696; background: #f8f8f8;}
 
 .lt_wr {width:32%}
 .lt_wr:nth-child(3n+1) {clear:both}
@@ -460,3 +455,20 @@ box-sizing:content-box;
 
 /* Mobile화면으로 */
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
+
+
+/* clear fix css */
+.clearfix {
+  zoom: 1;
+  /* ie 6,7 */
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}

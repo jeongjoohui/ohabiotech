@@ -1,18 +1,71 @@
 @charset "utf-8";
 
-#section2, #section3 {
+/* main_banner css 시작*/
+#main_banner {
+    text-align: center;
+    background: #f8f8f8;
+    position: relative;
+}
+
+#main_banner img {
+    width: 100%;
+}
+
+.main_txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    text-align: left;
+}
+
+.main_txt h2 {
+    font-size: 4em;
+    color: #393939;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.main_txt h3 {
+    font-size: 1.5em;
+    color: #898989;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.main_btn {
+    padding: 1.2em 0.5em;
+    border-radius: 30px;
+    width: 210px;
+    outline: none;
+    font-size: 1.2em;
+    border: 1px solid #969696;
+    background: #f8f8f8;
+}
+
+
+#section2,
+#section3,
+#section5 {
     position: relative;
     width: 63%;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
     margin-top: 8em;
-    overflow: auto;
+    clear: both;
 }
 
-.ver_line{display:block; width: 1px; height: 100px; margin: 0 auto; background-color: #ccc;}
+/* section2 css 시작*/
+.ver_line {
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
 
-#section2 .title, #section3 .title{
+#section2 .title {
     display: block;
     line-height: 45px;
     font-size: 2em;
@@ -20,7 +73,7 @@
     margin-top: 3em;
 }
 
-#section2 .sub_title, #section3 .sub_title {
+#section2 .sub_title {
     text-align: center;
     margin: 0 auto;
     font-size: 1.2em;
@@ -47,7 +100,7 @@
     font-size: 1.3em;
 }
 
-.pic_li_cont{
+.pic_li_cont {
     margin-bottom: 100px;
 }
 
@@ -73,15 +126,17 @@
     font-size: 1.5em;
     margin-bottom: 0.8em;
 }
-.pic_li_cont li p{
+
+.pic_li_cont li p {
     font-size: 1.2em;
     color: #888;
 }
-.img_hover{
+
+.img_hover {
     position: absolute;
     width: 100%;
     height: 392px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     color: #fff;
     top: 0;
@@ -91,10 +146,47 @@
 }
 
 /* section3 css시작 */
-.swiper-container{
-    margin-top: 7em;
+#section3 .title,#section5 .title {
+    display: block;
+    line-height: 45px;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 3em;
 }
-.swiper-slide{
+
+#section3 .sub_title,#section5 .sub_title {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #777;
+    font-weight: 200;
+}
+
+.swiper-container {
+    margin: 8em 0;
+}
+
+.swiper-slide {
     background: #ededed;
     text-align: center;
+
 }
+
+.swiper-slide img {
+    width: 100%;
+    max-width: inherit;
+    vertical-align: middle;
+
+}
+
+/* section4 css 시작*/
+#section4 {
+    width: 100%;
+    margin-bottom: 7em;
+}
+
+#section4 img {
+    width: 100%;
+}
+
+/* section5 css 시작 */
