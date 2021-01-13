@@ -28,6 +28,34 @@ $(function(){
 
 });
 
+//section2 mouseenter event
+$(function(){
+    $('.cont1').mouseenter(function(){
+        $('.img_hover1').fadeIn(200);
+        return false;
+    });
+    $('.cont1').mouseleave(function(){
+        $('.img_hover1').fadeOut(200);
+        return false;
+    });
+    $('.cont2').mouseenter(function(){
+        $('.img_hover2').fadeIn(200);
+        return false;
+    });
+    $('.cont2').mouseleave(function(){
+        $('.img_hover2').fadeOut(200);
+        return false;
+    });
+    $('.cont3').mouseenter(function(){
+        $('.img_hover3').fadeIn(200);
+        return false;
+    });
+    $('.cont3').mouseleave(function(){
+        $('.img_hover3').fadeOut(200);
+        return false;
+    });
+}) ;
+
 //문의,상담 chk / sendemail
 function submitChk(f) {
     f.action = "./_inc/form_ok.php";

@@ -10,7 +10,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 <div class="pic_li_lt">
-
+    <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
     <ul>
     <?php
     for ($i=0; $i<$list_count; $i++) {
@@ -30,9 +30,9 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
             $img_link_html = '<a href="'.$list[$i]['href'].'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
         }
     ?>
-    <li>
-        <?php echo $img_link_html; ?>
-        <?php
+        <li>
+            <?php echo $img_link_html; ?>
+            <?php
             if ($list[$i]['icon_secret']) echo "<i class=\"fa fa-lock\" aria-hidden=\"true\"></i><span class=\"sound_only\">비밀글</span> ";
  
             echo "<a href=\"".$list[$i]['href']."\" class=\"pic_li_tit\"> ";
@@ -58,15 +58,16 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 
             ?>
 
-        <div class="lt_info">
-            <span class="lt_nick"><?php echo $list[$i]['name'] ?></span>
-            <span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>
-        </div>
-    </li>
+            <div class="lt_info">
+				<span class="lt_nick"><?php echo $list[$i]['name'] ?></span>
+            	<span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>              
+            </div>
+        </li>
     <?php }  ?>
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
     </ul>
+    <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><span class="sound_only"><?php echo $bo_subject ?></span>더보기</a>
 
 </div>

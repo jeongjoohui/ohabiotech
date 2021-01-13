@@ -35,25 +35,27 @@ include_once(G5_THEME_PATH.'/head.php');
     <h3 class="sub_title">오하바이오텍을 소개합니다.</h3>
     <a href="<?php echo get_pretty_url('content', 'company');  ?>" class="more_btn">VIEW MORE +</a>
     <ul class="pic_li_cont">
-        <li><a href="<?php echo get_pretty_url('content', 'company'); ?>"><img
-                    src="<?php echo G5_IMG_URL ?>/company_thum.jpg" alt="">
-                <h4>오하바이오텍이란?</h4>
-                <p>오하바이오텍은...</p>
+        <li class="cont1"><img src="<?php echo G5_IMG_URL ?>/company_thum.jpg" alt="">
+            <h4>오하바이오텍이란?</h4>
+            <p>오하바이오텍은...</p>
+            <a href="<?php echo get_pretty_url('content', 'company'); ?>">
+                <div class="img_hover1" style="">
+                    MORE VEIW +</div>
             </a>
-            <div class="img_hover">MORE VEIW + </div>
         </li>
-        <li><a href="<?php echo get_pretty_url('content', 'technology'); ?>"><img
-                    src="<?php echo G5_IMG_URL ?>/tech_thum.jpg" alt="">
-                <h4>기술소개</h4>
-                <p>오하바이오텍은 기술</p>
+        <li class="cont2">
+            <img src="<?php echo G5_IMG_URL ?>/tech_thum.jpg" alt="">
+            <h4>기술소개</h4>
+            <p>오하바이오텍은 기술</p>
+            <a href="<?php echo get_pretty_url('content', 'technology'); ?>">
+                <div class="img_hover2" style="display:none;">MORE VEIW + </div>
             </a>
-            <div class="img_hover" style="display:none;">MORE VEIW + </div>
         </li>
-        <li><a href=""><img src="<?php echo G5_IMG_URL ?>/news_thum.jpg" alt="">
+        <li class="cont3">
+            <img src="<?php echo G5_IMG_URL ?>/news_thum.jpg" alt="">
                 <h4>언론보도</h4>
                 <p>오하바이오텍 언론보도</p>
-            </a>
-            <div class="img_hover" style="display:none;">MORE VEIW + </div>
+                <a href=""><div class="img_hover3" style="display:none;">MORE VEIW + </div></a>
         </li>
     </ul>
 </section>

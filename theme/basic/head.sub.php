@@ -57,8 +57,6 @@ if($config['cf_add_meta'])
 if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //index.css 링크 연결 코드 문법
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/swiper.min.css">', 0);
 
-
-
 ?>
 
 <!--[if lte IE 8]>

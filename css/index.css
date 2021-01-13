@@ -105,13 +105,10 @@
     float: left;
     margin: 100px 0 0;
     position: relative;
-}
-
-.pic_li_cont li a {
     text-align: center;
 }
 
-.pic_li_cont li a img {
+.pic_li_cont li  img {
     width: 100%;
     max-width: inherit;
     vertical-align: middle;
@@ -128,10 +125,10 @@
     color: #888;
 }
 
-.img_hover {
+.img_hover1,.img_hover2,.img_hover3 {
     position: absolute;
     width: 100%;
-    height: 392px;
+    height: 398px;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     color: #fff;
