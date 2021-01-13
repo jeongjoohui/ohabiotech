@@ -55,6 +55,9 @@ if($config['cf_add_meta'])
 
 <?php
 if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //<------------여기 추가
+add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/swiper.min.css">', 0);
+
+
 
 ?>
 
@@ -72,6 +75,8 @@ var g5_bo_table  = "<?php echo isset($bo_table)?$bo_table:''; ?>";
 var g5_sca       = "<?php echo isset($sca)?$sca:''; ?>";
 var g5_editor    = "<?php echo ($config['cf_editor'] && $board['bo_use_dhtml_editor'])?$config['cf_editor']:''; ?>";
 var g5_cookie_domain = "<?php echo G5_COOKIE_DOMAIN ?>";
+
+
 </script>
 <?php
 add_javascript('<script src="'.G5_JS_URL.'/jquery-1.12.4.min.js"></script>', 0);
@@ -81,6 +86,9 @@ add_javascript('<script src="'.G5_JS_URL.'/common.js?ver='.G5_JS_VER.'"></script
 add_javascript('<script src="'.G5_JS_URL.'/wrest.js?ver='.G5_JS_VER.'"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
+
+add_javascript('<script src="'.G5_JS_URL.'/swiper.min.js"></script>', 0);
+add_javascript('<script src="'.G5_JS_URL.'/index.js"></script>', 0);
 
 
 

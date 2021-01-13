@@ -1,21 +1,26 @@
 @charset "utf-8";
 
-#section2 {
+#section2, #section3 {
     position: relative;
-    width: 75%;
+    width: 63%;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
-    margin-top: 70px;
+    margin-top: 8em;
+    overflow: auto;
 }
-#section2 .title{
+
+.ver_line{display:block; width: 1px; height: 100px; margin: 0 auto; background-color: #ccc;}
+
+#section2 .title, #section3 .title{
     display: block;
     line-height: 45px;
     font-size: 2em;
     text-align: center;
+    margin-top: 3em;
 }
 
-#section2 .sub_title {
+#section2 .sub_title, #section3 .sub_title {
     text-align: center;
     margin: 0 auto;
     font-size: 1.2em;
@@ -49,7 +54,7 @@
 .pic_li_cont li {
     width: 33.3%;
     float: left;
-    margin: 100px 0 70px;
+    margin: 100px 0 0;
     position: relative;
 }
 
@@ -83,4 +88,13 @@
     line-height: 392px;
     font-size: 2em;
     font-weight: 700;
+}
+
+/* section3 css시작 */
+.swiper-container{
+    margin-top: 7em;
+}
+.swiper-slide{
+    background: #ededed;
+    text-align: center;
 }
