@@ -138,7 +138,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                     <li><label for="wr_3"></label><input type="text" id="wr_3" name="wr_3" placeholder="연락처" title="연락처"
                             maxlength="30" required /></li>
-                    <!-- <li class="tex_area"><label for="text"></label><textarea name="conts" id="text" placeholder="의뢰내용" title="의뢰내용"  ></textarea></li> -->
+
                 </ul>
                 <p class="tex_area"><label for="wr_content"></label><textarea name="wr_content" id="wr_content_id"
                         placeholder="의뢰내용" title="의뢰내용"></textarea></p>
@@ -146,12 +146,12 @@ include_once(G5_THEME_PATH.'/head.php');
                         for="check">개인정보보호정책에 동의합니다.</label></p>
             </fieldset>
             <p class="btn-area">
-                <!--<a><input type="submit" value="상담의뢰" id="postBtn" accesskey="s" class="postBtn" style="background:none; border:none; color:#fff; "></a>-->
                 <input type="submit" value="문 의 하 기" id="postBtn" accesskey="s" class="btn_consul">
 
             </p>
         </form>
     </div><!-- class="main-speedform" -->
+    <span class="ver_line"></span>
 </section>
 
 
