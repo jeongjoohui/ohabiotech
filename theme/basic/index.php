@@ -67,19 +67,19 @@ include_once(G5_THEME_PATH.'/head.php');
     <!-- swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/3d_w.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/3d_b.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product1'); ?>"><img src="<?php echo G5_IMG_URL ?>/3d_w.jpg" alt="kf94_3d"></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product1'); ?>"><img src="<?php echo G5_IMG_URL ?>/3d_b.jpg" alt="kf94_3d"></a></div>
 
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/2d_w.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product2'); ?>"><img src="<?php echo G5_IMG_URL ?>/2d_w.jpg" alt="kf94_2d"></a></div>
 
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/2d_b.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product2'); ?>"><img src="<?php echo G5_IMG_URL ?>/2d_b.jpg" alt="kf94_2d"></a></div>
 
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/den_w.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product3'); ?>"><img src="<?php echo G5_IMG_URL ?>/den_w.jpg" alt="dental"></a></div>
 
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/den_b.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product3'); ?>"><img src="<?php echo G5_IMG_URL ?>/den_b.jpg" alt="dental"></a></div>
 
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/2dc_w.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href=""><img src="<?php echo G5_IMG_URL ?>/2dc_b.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product1'); ?>"><img src="<?php echo G5_IMG_URL ?>/2dc_w.jpg" alt="kf94_3d_kids"></a></div>
+            <div class="swiper-slide"><a href="<?php echo get_pretty_url('content', 'product1'); ?>"><img src="<?php echo G5_IMG_URL ?>/2dc_b.jpg" alt="kf94_3d_kids"></a></div>
 
 
         </div>
