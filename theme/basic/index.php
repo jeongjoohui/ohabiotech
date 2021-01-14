@@ -47,7 +47,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <img src="<?php echo G5_IMG_URL ?>/tech_thum.jpg" alt="">
             <h4>기술소개</h4>
             <p>오하바이오텍은 기술</p>
-            <a href="<?php echo get_pretty_url('content','technology'); ?>">
+            <a href="<?php echo get_pretty_url('content', 'technology'); ?>">
                 <div class="img_hover2" style="display:none;">MORE VEIW + </div>
             </a>
         </li>
