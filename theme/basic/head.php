@@ -34,7 +34,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <ul id="hd_qnb">
                 <li><a href="<?php echo get_pretty_url('content', 'company'); ?>">회사소개</a></li>
                 <li><a href="<?php echo get_pretty_url('content', 'technology'); ?>">기술소개</a></li>
-                <li><a href="<?php echo get_pretty_url('content', 'product'); ?>">제품소개</a></li>
+                <li class="product_btn"><a href="<?php echo get_pretty_url('content', 'product1'); ?>">제품소개</a>
+                    <ul class="hd_gnb">
+                        <li><a href="<?php echo get_pretty_url('content', 'product1'); ?>">백약 99 상쾌한마스크 3d</a></li>
+                        <li><a href="<?php echo get_pretty_url('content', 'product2'); ?>">백약 99 상쾌한마스크 2d</a></li>
+                        <li><a href="<?php echo get_pretty_url('content', 'product3'); ?>">백약 99 상쾌한마스크 덴탈</a></li>
+                    </ul>
+                </li>
                 <li><a href="<?php echo get_pretty_url('content', 'facility'); ?>">시설소개</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/new.php">쇼핑몰바로가기</a></li>
                 <!-- <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit">접속자<strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li> -->
@@ -109,6 +115,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 </div> */?>
 
+<?/*
 
 <nav id="gnb">
     <h2>메인메뉴</h2>
@@ -198,6 +205,12 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         <div id="gnb_all_bg"></div>
     </div>
 </nav>
+
+*/?>
+
+
+
+
 <script>
     $(function () {
         $(".gnb_menu_btn").click(function () {
@@ -205,6 +218,17 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         });
         $(".gnb_close_btn, #gnb_all_bg").click(function () {
             $("#gnb_all, #gnb_all_bg").hide();
+        });
+
+        $(".product_btn").mouseenter(function(){
+            $(".hd_gnb").show();
+        });
+        $(".product_btn").mouseleave(function(){
+            $(".hd_gnb").hide();
+        });
+
+        $(".hd_gnb").mouseenter(function(){
+            $(this).show();
         });
     });
 </script>
@@ -221,18 +245,18 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
         </div>
         <img src="<?php echo G5_IMG_URL ?>/main_banner.png" alt="">
-        <div class="main_txt">
-            <h2>OHA BIOTECH</h2>
-            <h3>오하이이오텍은<br>숨쉬기편하고 안전한 마스크만을<br>생산합니다.</h3>
+<div class="main_txt">
+    <h2>OHA BIOTECH</h2>
+    <h3>오하이이오텍은<br>숨쉬기편하고 안전한 마스크만을<br>생산합니다.</h3>
 
-            <!-- <button class="main_btn">자세히보기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></button> -->
-        </div>
-    </div>
-    <div id="container_wr">
+    <!-- <button class="main_btn">자세히보기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></button> -->
+</div>
+</div>
+<div id="container_wr">
 
 
-        <div id="container">
-            <span class="ver_line"></span>
-            <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span
-                    title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span>
-            </h2><?php }/*?>
+    <div id="container">
+        <span class="ver_line"></span>
+        <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span
+                title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span>
+        </h2><?php }/*?>

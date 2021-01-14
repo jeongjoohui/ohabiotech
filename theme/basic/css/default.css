@@ -77,12 +77,12 @@ border:1px solid #558ab7 !important;
 
 #tnb {/*border-bottom:1px solid #383838;*/margin:0 auto}
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
-#tnb .inner {margin:0 auto; padding: 20px 0; position: relative;}
+#tnb .inner {margin:0 auto;  position: relative;}
 
 #hd_wrapper {position:relative;margin:0 auto;height:140px;zoom:1}
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
-#logo {float:left;}
+#logo {float:left; position: absolute; top: 50%; transform: translateY(-50%);} 
 
 .hd_sch_wr {float:left;padding:30px 0;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
@@ -93,12 +93,22 @@ border:1px solid #558ab7 !important;
 #hd_qnb {text-align:left; width: 53%; margin-left: 26%;}
 #hd_qnb:after {display:block;visibility:hidden;clear:both;content:""}
 /* #hd_qnb li {float:left;font-size:1.083em;line-height:14px;border-right:1px solid #4a4a4a;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px} */
-#hd_qnb li {float:left;font-size:1.3em;position:relative;text-align:center;margin:0 30px; line-height: 32px;}
+#hd_qnb>li {float:left;font-size:1.3em;text-align:center;margin:0 30px; line-height: 32px; padding: 20px 0;}
 
-#hd_qnb li:last-child {padding-right:0;margin-right:0;border-right:0}
+#hd_qnb>li:last-child {padding-right:0;margin-right:0;border-right:0}
 #hd_qnb li span {display:block;margin-top:5px;font-size:0.92em}
-#hd_qnb li a {display:inline-block;color:#919191}
+#hd_qnb>li>a {display:inline-block;color:#919191}
 #hd_qnb .visit .visit-num {display:inline-block;line-height:16px;padding:0 5px;margin-left:5px;border-radius:10px;background:#da22f5;color:#fff;font-size:10px}
+
+
+/* nav 제품소개btn 하위메뉴 css */
+#hd_qnb .product_btn{position: relative; }
+#hd_qnb .product_btn .hd_gnb{display: none; position: absolute; width: 250px; top: 72px; left: -90px; font-size: 0.8em; z-index: 999;}
+.hd_gnb li{  background: #f8f8f8; color: #919191;}
+.hd_gnb li:hover{background-color: rgba(19,173,197,0.5);  }
+.hd_gnb li a{display: block; padding:5px 0; text-align: center; color: #919191;width: 250px;}
+.hd_gnb li a:hover{color: #fff !important;font-weight: 600; width: 100%;} 
+
 
 
 .hd_login {position:absolute;right:0; top: 50%;transform: translateY(-50%);}
@@ -115,14 +125,14 @@ border:1px solid #558ab7 !important;
 #gnb #gnb_1dul {font-size:1.083em;padding:0;/*border-bottom:1px solid #e0e2e5;*/zoom:1}
 #gnb ul:after {display:block;visibility:hidden;clear:both;content:""}
 #gnb .gnb_1dli {float:left;line-height:55px;padding:0px;position:relative}
-#gnb .gnb_1dli:hover > a {color:#3a8afd;
+#gnb .gnb_1dli:hover > a {color:#13adc5;
 -webkit-transition:background-color 2s ease-out;
 -moz-transition:background-color 0.3s ease-out;
 -o-transition:background-color 0.3s ease-out;
 transition:background-color 0.3s ease-out}
 
 .gnb_1dli .bg {position:absolute;top:24px;right:8px;display:inline-block;width:10px;height:10px;overflow:hidden;background:url('../img/gnb_bg2.gif') no-repeat 50% 50%;text-indent:-999px}
-.gnb_1da {display:block;font-weight:bold;padding:0 15px;color:#080808;text-decoration:none}
+.gnb_1da {display:block;font-weight:bold;padding:0 15px;color:#888;text-decoration:none}
 .gnb_1dli.gnb_al_li_plus .gnb_1da{padding-right:25px}
 .gnb_2dli:first-child {border:0}
 .gnb_2dul {display:none;position:absolute;top:54px;min-width:140px;padding-top:2px}
@@ -130,8 +140,8 @@ transition:background-color 0.3s ease-out}
 -webkit-box-shadow:0px 1px 5px rgba(97, 97, 97, 0.2);
 -moz-box-shadow:0px 1px 5px rgba(97, 97, 97, 0.2);
 box-shadow:0px 1px 5px rgba(97, 97, 97, 0.2)}
-.gnb_2da {display:block;padding:0 10px;line-height:40px;background:#fff;color:#080808;text-align:left;text-decoration:none}
-a.gnb_2da:hover {color:#3a8afd;background:#f7f7f8;
+.gnb_2da {display:block;padding:0 10px;line-height:40px;background:#fff;color:#080808;text-align:left;text-decoration:none; width:230px}
+a.gnb_2da:hover {color:#13adc5;background:#f7f7f8;
 -moz-transition:all 0.3s ease-out;
 -o-transition:all 0.3s ease-out;
 transition:all 0.3s ease-out}

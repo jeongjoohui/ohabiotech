@@ -10,9 +10,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <h1><?php echo $g5['title']; ?></h1>
     </header>
 
-    <div id="ctt_con">
-        <?/*php echo $str;  내용추가 시 자동록등록되는 내용 21.01.14 주석처리*/?>
-
+    <div id="ctt_con" class="comp_bn">
+        <?/*php echo $str;*/ ?>
+        <img src="<?php echo G5_IMG_URL ?>/tech_bn.jpg" alt="main_banner">
     </div>
+    <div class="tech_cont">
+        <img src="<?php echo G5_IMG_URL ?>/tech_cont.jpg" alt="tech_content">
+    </div>
+
+    <span class="ver_line"></span>
 
 </article>
