@@ -75,7 +75,7 @@ border:1px solid #558ab7 !important;
 #hd {background:#f8f8f8}/*21.01.11 수정*/
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
-#tnb {/*border-bottom:1px solid #383838;*/margin:0 auto}
+#tnb {border-bottom:1px solid rgba(19, 173, 197, 0.5);background: rgba(255,255,255,0.3);; margin:0 auto}
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
 #tnb .inner {margin:0 auto;  position: relative;}
 
@@ -100,12 +100,14 @@ border:1px solid #558ab7 !important;
 #hd_qnb>li>a {display:inline-block;color:#919191}
 #hd_qnb .visit .visit-num {display:inline-block;line-height:16px;padding:0 5px;margin-left:5px;border-radius:10px;background:#da22f5;color:#fff;font-size:10px}
 
+#hd_qnb>li>a:hover{color:#a41d35; font-weight: 700;}
+
 
 /* nav 제품소개btn 하위메뉴 css */
 #hd_qnb .product_btn{position: relative; }
 #hd_qnb .product_btn .hd_gnb{display: none; position: absolute; width: 250px; top: 72px; left: -90px; font-size: 0.8em; z-index: 999;}
 .hd_gnb li{  background: #f8f8f8; color: #919191;}
-.hd_gnb li:hover{background-color: rgba(19,173,197,0.5);  }
+.hd_gnb li:hover{background-color: rgba(19, 173, 197, 0.5);  }
 .hd_gnb li a{display: block; padding:5px 0; text-align: center; color: #919191;width: 250px;}
 .hd_gnb li a:hover{color: #fff !important;font-weight: 600; width: 100%;} 
 
@@ -210,7 +212,8 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #top_btn:hover {border-color:#3059c7;background:#3059c7;color:#fff}
 
 /* 21.01.13  new footer */
-#ft {margin:2em auto 8em;text-align:center; color:#666;} 
+#ft {margin:2em auto 8em;text-align:center; color:#666;
+position: relative; left: 50%; transform: translateX(-50%);} 
 #ft h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #ft_wr {max-width:1240px;margin:0;padding:40px 0;position:relative;display:inline-block;text-align:center}
 #ft_wr:after {display:block;visibility:hidden;clear:both;content:""}
