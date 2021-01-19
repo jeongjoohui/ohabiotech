@@ -20,7 +20,8 @@ include_once(G5_THEME_PATH.'/head.php');
     <div id="main_video">
 
     </div>
-    <img src="<?php echo G5_IMG_URL ?>/main_banner.png" alt="">
+    <!-- <img src="<?php echo G5_IMG_URL ?>/main_banner.png" alt=""> -->
+    <div class="main_img"></div>
     <div class="main_txt">
         <h2>OHA BIOTECH</h2>
         <h3>오하이이오텍은<br>숨쉬기편하고 안전한 마스크만을<br>생산합니다.</h3>

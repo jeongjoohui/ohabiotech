@@ -56,6 +56,7 @@ if($config['cf_add_meta'])
 <?php
 if (defined('_INDEX_')) echo '<link rel="stylesheet" href="'.G5_CSS_URL.'/index.css">'.PHP_EOL; //index.css 링크 연결 코드 문법
 add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/swiper.min.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/aos.css">', 0);
 
 ?>
 
@@ -87,6 +88,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font
 
 //swiper.js, index.js 파일 연결 문법
 add_javascript('<script src="'.G5_JS_URL.'/swiper.min.js"></script>', 0);
+add_javascript('<script src="'.G5_JS_URL.'/aos.js"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/index.js"></script>', 0);
 
 

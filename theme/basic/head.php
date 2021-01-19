@@ -42,7 +42,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     </ul>
                 </li>
                 <li><a href="<?php echo get_pretty_url('content', 'facility'); ?>">시설소개</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/new.php">쇼핑몰바로가기</a></li>
+                <li><a href="https://smartstore.naver.com/bjcosmall/products/5223831801">쇼핑몰바로가기</a></li>
                 <!-- <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit">접속자<strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li> -->
             </ul>
             <ul class="hd_login">
@@ -57,11 +57,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <?php } else {  ?>
                 <li><a href="<?php echo G5_BBS_URL ?>/login.php">LOGIN</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/register.php">JOIN</a></li>
-                <li><button type="submit" id="sch_submit" value="검색"><i class="fa fa-search"
+                <!-- <li><button type="submit" id="sch_submit" value="검색"><i class="fa fa-search"
                             aria-hidden="true"></i><span class="sound_only">검색</span></button></li>
                 <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i
                             class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button>
-                </li>
+                </li> -->
                 <?php }  ?>
 
             </ul>
